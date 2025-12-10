@@ -1,0 +1,175 @@
+2025-12-10 12:52:05.850 [ERR] Microsoft.Extensions.Hosting.Internal.Host: Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5175: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-10 13:19:38.090 [ERR] Microsoft.Extensions.Hosting.Internal.Host: Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5175: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-10 13:20:18.429 [ERR] Microsoft.Extensions.Hosting.Internal.Host: Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5175: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-10 13:20:29.072 [ERR] Microsoft.Extensions.Hosting.Internal.Host: Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5175: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-10 13:21:38.657 [ERR] Microsoft.Extensions.Hosting.Internal.Host: Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5175: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-10 13:23:23.971 [INF] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5175
+2025-12-10 13:23:24.021 [INF] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2025-12-10 13:23:24.021 [INF] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2025-12-10 13:23:24.022 [INF] Microsoft.Hosting.Lifetime: Content root path: /Users/saeed/WBS/Backend/API.Net/RestaurantAPI
+2025-12-10 13:23:45.589 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET / responded 200 in 45.6030 ms
+2025-12-10 13:23:51.784 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /orders responded 200 in 41.4079 ms
+2025-12-10 13:24:01.292 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /users responded 200 in 45.8133 ms
+2025-12-10 13:24:14.686 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /health responded 200 in 39.7997 ms
+2025-12-10 13:25:36.351 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /openapi/v1.json responded 200 in 107.7556 ms
+2025-12-10 13:25:45.001 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /openapi/v1.json responded 200 in 7.3606 ms
+2025-12-10 13:26:01.145 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /health/ready responded 200 in 5.0952 ms
+2025-12-10 13:27:08.421 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /health responded 200 in 5.9045 ms
+2025-12-10 13:27:15.499 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /health/live responded 200 in 2.9351 ms
+2025-12-10 13:46:49.599 [INF] Microsoft.Hosting.Lifetime: Application is shutting down...
+2025-12-10 13:46:57.433 [INF] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5175
+2025-12-10 13:46:57.491 [INF] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2025-12-10 13:46:57.491 [INF] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2025-12-10 13:46:57.491 [INF] Microsoft.Hosting.Lifetime: Content root path: /Users/saeed/WBS/Backend/API.Net/RestaurantAPI
+2025-12-10 13:47:10.469 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /users responded 200 in 60.4162 ms
+2025-12-10 13:51:21.117 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /metrics responded 404 in 26.9747 ms
+2025-12-10 14:24:09.918 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /users responded 200 in 38.8607 ms
+2025-12-10 14:24:25.795 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /users responded 200 in 6.5548 ms
+2025-12-10 14:24:26.871 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /users responded 200 in 1.1930 ms
+2025-12-10 14:35:37.691 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /users responded 200 in 11.7320 ms
+2025-12-10 14:37:42.140 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 7.8285 ms
+2025-12-10 14:39:07.167 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/login responded 400 in 27.2859 ms
+2025-12-10 14:40:07.423 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/register responded 200 in 160.5073 ms
+2025-12-10 14:40:33.184 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/login responded 200 in 97.7830 ms
+2025-12-10 14:42:51.878 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 3.8192 ms
+2025-12-10 14:45:26.315 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 3.2138 ms
+2025-12-10 14:45:27.501 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.3348 ms
+2025-12-10 14:45:34.897 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.4743 ms
+2025-12-10 14:45:36.023 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.5358 ms
+2025-12-10 14:46:45.368 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /auth/me responded 401 in 0.7975 ms
+2025-12-10 14:47:11.408 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /auth/me responded 401 in 0.4593 ms
+2025-12-10 14:47:12.541 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /auth/me responded 401 in 0.2595 ms
+2025-12-10 14:47:32.722 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /auth/me responded 401 in 0.3745 ms
+2025-12-10 14:47:33.758 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /auth/me responded 401 in 0.2793 ms
+2025-12-10 14:47:51.402 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /auth/me responded 401 in 0.6368 ms
+2025-12-10 14:47:52.981 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /auth/me responded 401 in 0.3318 ms
+2025-12-10 14:49:05.664 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /Orders responded 201 in 82.7360 ms
+2025-12-10 14:49:37.889 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /auth/me responded 401 in 0.8840 ms
+2025-12-10 14:49:46.675 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /auth/me responded 401 in 0.4585 ms
+2025-12-10 14:50:08.570 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.7333 ms
+2025-12-10 14:50:09.586 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.5380 ms
+2025-12-10 14:50:20.488 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.5368 ms
+2025-12-10 14:50:21.455 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.7596 ms
+2025-12-10 14:50:22.418 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.3913 ms
+2025-12-10 14:50:23.188 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.6233 ms
+2025-12-10 14:51:20.126 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.5074 ms
+2025-12-10 14:51:21.652 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.4648 ms
+2025-12-10 14:51:36.283 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.5488 ms
+2025-12-10 14:51:37.337 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 401 in 0.2187 ms
+2025-12-10 14:51:59.018 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 201 in 15.1155 ms
+2025-12-10 14:52:12.459 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 201 in 5.4834 ms

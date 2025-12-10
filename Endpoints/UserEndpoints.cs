@@ -15,7 +15,7 @@ public static class UserEndpoints
         group.MapGet("/", async (IUserService userService) =>
         {
             var users = await userService.ListAsync();
-            var userDtos = users.Select(u => new UserResponseDto(u.Id, u.Name, u.Email, u.CreatedAt));
+            var userDtos = users.Select(u => new UserResponseDto(u.Id, u.Name, u.Email ?? string.Empty, u.CreatedAt));
             return TypedResults.Ok(userDtos);
         }).Produces(200);
 
@@ -23,7 +23,7 @@ public static class UserEndpoints
         group.MapPost("/", [Authorize] async (CreateUserDto createUserDto, IUserService userService, HttpContext context) =>
         {
             var user = await userService.CreateAsync(createUserDto.Name, createUserDto.Email);
-            var userDto = new UserResponseDto(user.Id, user.Name, user.Email, user.CreatedAt);
+            var userDto = new UserResponseDto(user.Id, user.Name, user.Email ?? string.Empty, user.CreatedAt);
 
             var location = $"{context.Request.Scheme}://{context.Request.Host}/users/{user.Id}";
             return Results.Created(location, userDto);
@@ -38,7 +38,7 @@ public static class UserEndpoints
 
             if (user is null) return Results.NotFound();
 
-            var userDto = new UserResponseDto(user.Id, user.Name, user.Email, user.CreatedAt);
+            var userDto = new UserResponseDto(user.Id, user.Name, user.Email ?? string.Empty, user.CreatedAt);
 
             return TypedResults.Ok(userDto);
         }).Produces(200);
@@ -50,7 +50,7 @@ public static class UserEndpoints
             if (user is null)
                 return Results.NotFound();
 
-            var userDto = new UserResponseDto(user.Id, user.Name, user.Email, user.CreatedAt);
+            var userDto = new UserResponseDto(user.Id, user.Name, user.Email ?? string.Empty, user.CreatedAt);
             return TypedResults.Ok(userDto);
         }).Produces(200);
 

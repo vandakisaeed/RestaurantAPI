@@ -121,6 +121,12 @@ public class OrderService : IOrderService
         decimal amount, OrderType type, DateTime? timestamp = null)
     {
         var now = timestamp ?? DateTime.UtcNow;
+        // Validate user exists
+        var user = await _db.Users.FirstOrDefaultAsync(u => u.Id == userId);
+        if (user is null)
+        {
+            throw new ArgumentException("User not found", nameof(userId));
+        }
 
         var tx = new Order
         {

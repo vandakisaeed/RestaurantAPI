@@ -7,14 +7,18 @@ namespace RestaurantAPI.Services;
 public class UserService : IUserService
 {
     private readonly ApplicationDbContext _db;
-
-    public UserService(ApplicationDbContext db)
+    private readonly ILogger<UserService> _logger;
+    private readonly IMetricsService _metrics;
+    public UserService(ApplicationDbContext db, ILogger<UserService> logger, IMetricsService metrics)
     {
         _db = db;
+        _logger = logger;
+        _metrics = metrics;
     }
 
     public async Task<User?> GetAsync(Guid id)
     {
+        _logger.LogInformation("Retrieving user with ID: {UserId}", id);
         return await _db.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Id == id);
     }
 
@@ -35,6 +39,7 @@ public class UserService : IUserService
 
         _db.Users.Add(user);
         await _db.SaveChangesAsync();
+        _metrics.RecordUserCreated();
         return user;
     }
 
